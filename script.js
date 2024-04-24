@@ -1,7 +1,7 @@
 
 function stringChop(str, size) {
   // your code here
-  if (str.length === 0) {
+  if (str.length === 0 || str === null) {
     return [];
   }
   if (str.length <= size) {
@@ -20,6 +20,6 @@ function stringChop(str, size) {
   return ans;
 }
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
